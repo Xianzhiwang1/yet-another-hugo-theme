@@ -1,12 +1,4 @@
-# Petrus' Hugo Theme
+# yet another hugo theme 
 
-This is a fork of [Luke Smith](https://lukesmith.xyz)'s Hugo theme, [Lugo](https://github.com/lukesmithxyz/lugo).
+This is a fork of [Pedro](https://github.com/apePetrus)'s Hugo theme, [Pugo](https://github.com/apePetrus/pugo).
 
-## Get started
-```
-hugo new site new-site
-cd new-site
-git clone https://github.com/apepetrus/pugo themes/pugo
-echo "theme = 'pugo'" >> config.toml
-cp themes/pugo/static/style.css static/
-```
