@@ -27,11 +27,6 @@ languageCode = 'en-us'
   weight = 2
 
 [[menu.main]]
-  name = "Shrines"
-  url = "/shrines"
-  weight = 3
-
-[[menu.main]]
   name = "About me"
   url = "/about"
   weight = 4

@@ -445,3 +445,65 @@ hr {
         font-size: 1.75rem;
     }
 }
+
+/* ── Home Button ──────────────────────────── */
+.page-footer {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    /* Gradient hairline separator matching the <hr> style */
+    background: linear-gradient(
+            90deg,
+            transparent,
+            var(--color-border-strong),
+            transparent
+        )
+        no-repeat top / 100% 1px;
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.6em 1.4em;
+    border-radius: 99px;
+    border: 1.5px solid var(--color-secondary);
+    color: var(--color-secondary);
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background var(--transition-med),
+                color var(--transition-med),
+                border-color var(--transition-med),
+                box-shadow var(--transition-med);
+}
+
+.home-btn:hover,
+.home-btn:focus-visible {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-surface);
+    box-shadow: 0 4px 16px var(--color-shadow);
+    text-decoration: none;
+}
+
+.home-btn:visited {
+    color: var(--color-secondary);
+}
+
+.home-btn:hover:visited,
+.home-btn:focus-visible:visited {
+    color: var(--color-surface);
+}
+
+.home-btn__arrow {
+    display: inline-block;
+    transition: transform var(--transition-fast);
+}
+
+.home-btn:hover .home-btn__arrow,
+.home-btn:focus-visible .home-btn__arrow {
+    transform: translateX(-4px);
+}
